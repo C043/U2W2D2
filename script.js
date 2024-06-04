@@ -3,6 +3,8 @@ const countTrips = () => {
   const cards = document.getElementsByClassName("card");
   alert("Scegli Eveline-R, abbiamo " + cards.length + " viaggi disponibili!");
 };
+const headerBtn = document.getElementById("call-to-action");
+headerBtn.onclick = countTrips;
 
 // funzione che mette i badge hot
 const badgeGen = () => {
@@ -20,6 +22,7 @@ const badgeGen = () => {
   }
 };
 
+// funzione che rimuove tutte le card
 const removeCards = () => {
   const cards = document.getElementsByClassName("card");
   for (let i = 0; i < cards.length; i++) {

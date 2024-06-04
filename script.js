@@ -4,4 +4,5 @@ const countTrips = () => {
   alert("Scegli Eveline-R, abbiamo " + cards.length + " viaggi disponibili!");
 };
 
+// modal js
 // window.onload = countTrips;

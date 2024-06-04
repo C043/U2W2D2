@@ -438,9 +438,56 @@
         </div>
       </div>
     </main>
+
+    <div class="modal" id="modal-contattaci" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Rimani in contatto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input
+              type="email"
+              class="form-control"
+              id="InputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-grazie">
+              Invia
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-grazie" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Rimani in contatto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Grazie per averci contattato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-dark">
       <div class="container text-center text-light p-5">
-        <button type="button" class="btn btn-dark btn-outline-secondary mb-4">Contattaci</button>
+        <button
+          type="button"
+          class="btn btn-dark btn-outline-secondary mb-4"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-contattaci"
+        >
+          Contattaci
+        </button>
         <p class="fs-6">&copy 2021 Kalina Travel LTD. All Rights Reserved.</p>
       </div>
     </footer>

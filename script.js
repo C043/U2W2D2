@@ -19,4 +19,13 @@ const badgeGen = () => {
     currentCard.appendChild(badge);
   }
 };
+
+const removeCards = () => {
+  const cards = document.getElementsByClassName("card");
+  for (let i = 0; i < cards.length; i++) {
+    const currentCard = cards[i];
+    currentCard.classList.add("d-none");
+  }
+};
+
 window.onload = badgeGen;
